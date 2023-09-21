@@ -1,9 +1,16 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<script >
+export default {
+  data() {
+    return {
+
+      messaggio: 'Hello Vite'
+    }
+  }
+}
 </script>
 
 <template>
-  <h1>Hello Vite</h1>
+  <h1>{{ messaggio }}</h1>
 </template>
 
 <style scoped>
