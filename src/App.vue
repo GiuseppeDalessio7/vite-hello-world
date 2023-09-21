@@ -1,8 +1,15 @@
 <script >
+import AppTitle from "./components/AppTitle.vue"
+import AppHero from "./components/AppHero.vue"
+
+
 export default {
+  components: {
+    AppTitle,
+    AppHero,
+  },
   data() {
     return {
-
       messaggio: 'Hello Vite'
     }
   }
@@ -10,7 +17,9 @@ export default {
 </script>
 
 <template>
-  <h1>{{ messaggio }}</h1>
+  <h1 class="text-danger">{{ messaggio }}</h1>
+  <AppTitle />
+  <AppHero />
 </template>
 
 <style scoped>
